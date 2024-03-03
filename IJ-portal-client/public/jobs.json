@@ -7,11 +7,11 @@
       "minPrice": "20",
       "maxPrice": "30",
       "salaryType": "Yearly",
-      "jobLocation": "Brussels",
+      "jobLocation": "Trivandrum",
       "postingDate": "2024-02-25",
       "experienceLevel": "Any experience",
       "employmentType": "Full-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Design, develop, and maintain software applications. Collaborate with cross-functional teams to translate requirements into scalable and efficient solutions using programming languages and best practices."
     },
     {
       "id": 2,
@@ -21,11 +21,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Yearly",
-      "jobLocation": "San Francisco",
+      "jobLocation": "Mumbai",
       "postingDate": "2024-02-24",
       "experienceLevel": "Internship",
       "employmentType": "Temporary",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Design, develop, and maintain websites and web applications. Proficient in frontend and backend technologies, including HTML, CSS, JavaScript, and server-side languages like Python or Node.js."
     },
     {
       "id": 3,
@@ -35,11 +35,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Yearly",
-      "jobLocation": "Seattle",
+      "jobLocation": "Trivandrum",
       "postingDate": "2023-02-25",
       "experienceLevel": "Any experience",
       "employmentType": "Full-time", 
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Analyze large datasets, develop statistical models and extract insights to form decision-making. Proficiency in programming languages and machine learning techniques."
     },
     {
       "id": 4,
@@ -49,11 +49,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Monthly",
-      "jobLocation": "London",
+      "jobLocation": "Kochi",
       "postingDate": "2023-10-05",
       "experienceLevel": "Work remotely",
       "employmentType": "Part-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Create intuitive user interfaces and enganing user experiences. Proficiency in  design tools, wireframing, prototyping and understanding of user psychology and ineteraction principles."
     },
     {
       "id": 5,
@@ -63,11 +63,11 @@
       "minPrice": "50",
       "maxPrice": "75",
       "salaryType": "Yearly",
-      "jobLocation": "London",
+      "jobLocation": "Kochi",
       "postingDate": "2023-10-28",
       "experienceLevel": "Intership",
       "employmentType": "Full-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Build interactive web interfaces with HTML, CSS, and JavaScript. Collaborate with designers and backend developers to ensure seamless integration and optimal user experience."
     },
     {
       "id": 6,
@@ -77,11 +77,11 @@
       "minPrice": "80",
       "maxPrice": "120",
       "salaryType": "Yearly",
-      "jobLocation": "Boston",
+      "jobLocation": "Hyderabad",
       "postingDate": "2023-10-05",
       "experienceLevel": "Intership",
       "employmentType": "Temporary",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Automate and streamline software development processes. Implement CI/CD pipelines, manage infrastructure as code, and ensure continuous integration, delivery, and deployment for efficient and reliable software delivery."
     },
     {
       "id": 1,
@@ -91,11 +91,11 @@
       "minPrice": "30",
       "maxPrice": "80",
       "salaryType": "Yearly",
-      "jobLocation": "Brussels",
+      "jobLocation": "Bangalore",
       "postingDate": "2024-02-23",
       "experienceLevel": "Any experience",
       "employmentType": "Full-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Design, develop, and maintain software applications. Collaborate with cross-functional teams to translate requirements into scalable and efficient solutions using programming languages and best practices."
     },
     {
       "id": 2,
@@ -105,11 +105,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Yearly",
-      "jobLocation": "San Francisco",
+      "jobLocation": "Bangalore",
       "postingDate": "2023-10-28",
       "experienceLevel": "Internship",
       "employmentType": "Temporary",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Design, develop, and maintain websites and web applications. Proficient in frontend and backend technologies, including HTML, CSS, JavaScript, and server-side languages like Python or Node.js."
     },
     {
       "id": 3,
@@ -119,11 +119,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Yearly",
-      "jobLocation": "Seattle",
+      "jobLocation": "Trivandrum",
       "postingDate": "2023-10-28",
       "experienceLevel": "Any experience",
       "employmentType": "Full-time", 
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Analyze large datasets, develop statistical models and extract insights to form decision-making. Proficiency in programming languages and machine learning techniques."
     },
     {
       "id": 4,
@@ -133,11 +133,11 @@
       "minPrice": "40",
       "maxPrice": "50",
       "salaryType": "Monthly",
-      "jobLocation": "London",
+      "jobLocation": "Kochi",
       "postingDate": "2023-10-05",
       "experienceLevel": "Work remotely",
       "employmentType": "Part-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Create intuitive user interfaces and enganing user experiences. Proficiency in  design tools, wireframing, prototyping and understanding of user psychology and ineteraction principles."
     },
     {
       "id": 5,
@@ -147,11 +147,11 @@
       "minPrice": "50",
       "maxPrice": "75",
       "salaryType": "Yearly",
-      "jobLocation": "London",
+      "jobLocation": "Kochi",
       "postingDate": "2023-10-28",
       "experienceLevel": "Intership",
       "employmentType": "Full-time",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Build interactive web interfaces with HTML, CSS, and JavaScript. Collaborate with designers and backend developers to ensure seamless integration and optimal user experience."
     },
     {
       "id": 6,
@@ -161,11 +161,11 @@
       "minPrice": "80",
       "maxPrice": "120",
       "salaryType": "Yearly",
-      "jobLocation": "Boston",
+      "jobLocation": "Hyderabad",
       "postingDate": "2022-10-05",
       "experienceLevel": "Intership",
       "employmentType": "Temporary",
-      "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+      "description": "Automate and streamline software development processes. Implement CI/CD pipelines, manage infrastructure as code, and ensure continuous integration, delivery, and deployment for efficient and reliable software delivery."
     }
   ]
   
