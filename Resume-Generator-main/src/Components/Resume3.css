@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    border: 1px solid #ccc; /* Border around the paper */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Background color of the paper */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    
+  }

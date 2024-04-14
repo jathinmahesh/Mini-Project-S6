@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    border: 1px solid #ccc; /* Border around the paper */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Background color of the paper */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  @media print {
+    /* Adjust margins */
+    body {
+      margin: 0;
+      font-size: 22px;
+      
+    }
+    .container {
+      margin: 1cm;
+     
+    }
+    /* Adjust font sizes */
+    .container h2 {
+      font-size: 18pt;
+    }
+    /* Hide non-essential elements */
+    .no-print {
+      display: none;
+    }
+  }
+  
+  
+  .left {
+    height: 297mm;
+    flex: 1;
+    background-color: rgb(38, 48, 63); /* Dark background color */
+    color: #fff; /* White text color */
+     /* Add padding for spacing */
+    position: relative; /* Ensure proper positioning for the pseudo-element */
+    display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  
+  }
+  
+  
+  .left > * {
+    margin-bottom: 20px; /* Add margin bottom to create a gap between each component */
+  }
+  
+  .left h5 {
+    position: relative;
+    font-weight: bold; /* Ensure proper positioning for the pseudo-element */
+  }
+  
+  .left h5::after {
+    content: ""; /* Add content for the pseudo-element */
+    display: block; /* Ensure proper display for the pseudo-element */
+    border-bottom: 2px solid #fff; /* Add underline style */
+    width: calc(100% - 10px); /* Make the underline span the width minus padding */
+    margin-top: 5px; /* Adjust the space between heading and underline */
+    position: absolute; /* Position the underline */
+    left: 5px; /* Align the underline to the left with padding */
+  }
+  
+  .right {
+    height: auto;
+    flex: 2;
+    background-color: lightcoral; /* Adjust as needed */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .contact,
+  .phone,
+  .email,
+  .address {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .phone h6, .email h6, .address h6 {
+    margin-bottom: 5px; /* Add spacing between headings and content */
+    color: rgba(255, 255, 255, 0.8); /* Slightly darken the text */
+  }
+
+  .Education{
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .Expertise{
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Expertise h5{
+    margin-bottom:  20px;
+  }
+
+  .Language{
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Language h5{
+    margin-bottom: 20px;
+  }
+  
+
+
+  .right {
+    flex: 2;
+    background-color: white; /* Adjust as needed */
+    padding: 20px; /* Add padding for spacing */
+    position: relative; /* Set position relative for proper positioning of pseudo-element */
+  }
+  
+  .right h3 {
+    color: black; /* White text color */
+    position: relative; /* Set position relative for proper positioning of pseudo-element */
+  }
+  
+  .right h3::after {
+    content: ""; /* Add content for the pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    bottom: -5px; /* Adjust vertical position to move the underline below the text */
+    left: 0; /* Align the underline with the left edge of the text */
+    width: 100%; /* Make the underline span the full width */
+    height: 2px; /* Set the height of the underline */
+    background-color: black; /* White color for the underline */
+  }
+
+  .name h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .about span{
+    color: grey;
+  }
+
+  
+
+  .Experience h6{
+    
+    font-weight: 600;
+    color: grey;
+  }
+
+  .Experience span{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    color: grey;
+  }
+  .Exp-div{
+    margin-bottom: 40px;
+  }
+
+  .Ref-div{
+    margin-top: 10px;
+    color: black;
+    
+  }
+  .Ref-div span{
+    font-family: 600;
+  }
+
+  .Reference-div{
+    margin-right: 50px;
+   
+    
+  }

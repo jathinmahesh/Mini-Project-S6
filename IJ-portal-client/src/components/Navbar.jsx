@@ -10,7 +10,7 @@ const Navbar = () => {
     const navItems = [
         {path: "/", title: "Start a search"},
         {path: "/my-job", title: "My Internships and Jobs"},
-        {path: "/resume", title: "Create my resume"},
+        {path: "http://localhost:3000/", title: "Create my resume"},
         {path: "/post-job", title: "Post a job"}
     ]
   return (

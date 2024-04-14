@@ -1,0 +1,105 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background color */
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.Tech-Skills,
+.Language {
+  width: 50%;
+}
+
+.Tech-Skills .input-field,
+.Language .input-field {
+  width: calc(100% - 48px); /* Set a fixed width for the input fields inside Tech-Skills and Language containers */
+}
+
+.input-field {
+  width: calc(50% - 24px); /* Set a fixed width for each input field */
+  margin-bottom: 20px;
+}
+  
+.input-field.col.s6 {
+  padding-right: 10px;
+}
+
+.input-field.col.s4 {
+  width: calc(33.33% - 10px); /* Adjust width for one-third of the container */
+  padding-right: 10px; /* Add padding to separate fields */
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.description-textarea {
+  height: 100px;
+  width: 100%;
+}
+
+.heading {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+  margin-bottom: 10px;
+}
+
+.Button{
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #007bff; /* Button border color */
+    color: #007bff; /* Button text color */
+    background-color: #fff; /* Button background color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+  
+  .Button:hover {
+    background-color: #007bff; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+  }
+
+
+/* styles.css */
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #dc3545; /* Red border */
+  color: #dc3545; /* Red text color */
+  background-color: #fff; /* White background */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #dc3545; /* Red background color on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.submit-button:focus {
+  outline: none;
+}

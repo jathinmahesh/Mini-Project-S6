@@ -1,0 +1,94 @@
+/* styles.css */
+.Wrapper {
+    background-color: #f0f0f0; /* Light gray background to simulate paper */
+    border-radius: 10px; /* Rounded corners for the paper effect */
+    padding: 20px; /* Add padding to create space between content and paper edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    max-width: 1000px; /* Limit the maximum width of the paper */
+    margin: 0 auto; /* Center the paper horizontally */
+    border: 1px solid #ccc; /* Border around the paper */
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .Left-Wrap {
+    width: 40%; /* Adjust the width of the left section */
+    padding: 10px; /* Add padding to the left section */
+    background-color: lightcyan; /* White background for the left section */
+    border-radius: 5px; /* Rounded corners for the left section */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+
+    height: 297mm;
+    flex: 1;
+    
+    color: #fff; /* White text color */
+     /* Add padding for spacing */
+    position: relative; /* Ensure proper positioning for the pseudo-element */
+    display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  }
+  
+  .Right-Wrap {
+  
+    padding: 10px; /* Add padding to the right section */
+    background-color: #fff; /* White background for the right section */
+    border-radius: 5px; /* Rounded corners for the right section */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+
+    flex: 2;
+    background-color: lightcoral; /* Adjust as needed */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  .material-icons {
+    color: black; /* Set the color to black */
+  }
+
+  .Profile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 10px;
+  }
+
+  .Phone span{
+    color: black;
+    margin-left: 20px;
+  }
+
+  .Email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .Email span{
+    color: black;
+    margin-left: 20px;
+  }
+
+  .Location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .Location span{
+    color: black;
+    margin-left: 20px;
+  }
+
+  .Education-Details h5{
+  color: rgb(72, 66, 66);
+  }
+
+  .Education-Details span{
+    color: rgb(72, 66, 66);
+    }
