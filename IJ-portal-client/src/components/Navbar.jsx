@@ -1,7 +1,25 @@
 import React, { useState} from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import app from '../firebase/firebase.config';
 
 const Navbar = () => {
+    const provider = new GoogleAuthProvider();
+
+    const auth = getAuth();
+
+    const handleLogin = () => {
+        signInWithPopup(auth,provider).then((result) => {
+            const user = result.user;
+            console.log(user);
+        }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            const email = error.customData.email;
+            const credential = GoogleAuthProvider.credentialFromError(error);
+        });
+    }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleMenuToggler = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -41,8 +59,7 @@ const Navbar = () => {
             </ul>
             {/* Signup and login button*/}
             <div className='text-base text-primary font-medium space-x-5 hidden lg:block'>
-                <Link to="/login" className="py-2 px-5 border rounded">Log in</Link>
-                <Link to="/sign-up" className="py-2 px-5 border rounded bg-blue text-white">Sign up</Link>
+                <button className="py-2 px-5 border rounded bg-blue text-white" onClick={handleLogin}>Log in/Sign up</button>
             </div>
         </nav>
     </header>
