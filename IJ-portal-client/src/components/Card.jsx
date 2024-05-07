@@ -1,12 +1,26 @@
 import React from 'react'
+import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom'
 import {FiCalendar, FiDollarSign, FiMapPin, FiClock} from "react-icons/fi"
 
 const Card = ({data}) => {
   const {companyName, jobTitle, companyLogo, minPrice, maxPrice, salaryType, jobLocation, employmentType, postingDate, description} = data;
+
+  const handleApply = () => {
+    Swal.fire({
+      input: "url",
+      inputLabel: "URL address",
+      inputPlaceholder: "Enter the URL for your resume"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(`Entered URL: ${result.value}`);
+      }
+    });
+  };
+
   return (
     <section className='card'>
-      <Link to={"/"} className='flex gap-4 flex-col sm:flex-row items-start'>
+      <div className='flex gap-4 flex-col sm:flex-row items-start'>
         <img src={companyLogo} alt="" />
         <div>
           <h4 className='text -primary mb-1'>{companyName}</h4>
@@ -20,7 +34,10 @@ const Card = ({data}) => {
 
           <p className='text-base text-primary/70'>{description}</p>
         </div>
-      </Link>
+        <button className="bg-blue text-white py-2 px-4 rounded hover:bg-blue-600" onClick={handleApply}>
+          Apply
+        </button>
+      </div>
     </section>
   )
 }

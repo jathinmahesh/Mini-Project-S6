@@ -1,0 +1,96 @@
+/* Additions for the technical section */
+.technical {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .technical {
+      grid-template-columns: repeat(2, 1fr); /* Two skills per row for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .technical {
+      grid-template-columns: 1fr; /* One skill per row for mobile screens */
+    }
+  }
+  
+  /* Other existing styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  header, section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-top: 2px solid black;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  
+  header div {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  section > div {
+    margin-bottom: 10px;
+  }
+  
+  section > div:last-child {
+    margin-bottom: 0;
+  }
+  
+  ul {
+    
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    list-style-type: disc;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+ 
+  
+  ul li:last-child:after {
+    content: '';
+    margin: 0;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media print {
+    body {
+      background-color: #fff;
+    }
+    .resume-container {
+      box-shadow: none;
+    }
+  }
+  

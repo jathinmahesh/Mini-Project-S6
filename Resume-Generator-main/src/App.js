@@ -7,7 +7,8 @@ import Resume from './Components/resume1';
 import Resume2 from './Components/Resume2';
 import Home_Screen from './screens/Home_Screen';
 import Resume3 from './Components/Resume3';
-
+import Resume6 from './Components/Resume6';
+import Home6 from './screens/home6'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
          <Route path='/Resume/5' element={<Home2 />} />
          <Route path='/resume5' element={<Resume3 />} />
+         <Route path='/Resume/6' element={<Home6/>} />
         
            
         </Routes>

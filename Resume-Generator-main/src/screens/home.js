@@ -60,7 +60,7 @@ export default function Home() {
 
     useEffect(()=>{
         const email_para=localStorage.getItem("email")
-     fetch(`http://localhost:4000/getUser/?email=${email_para}`,
+     fetch(`http://localhost:4000/getUser/?email=${email}`,
      {
         method:"GET",
         headers:{
@@ -90,7 +90,7 @@ export default function Home() {
         console.log(user)
      })
      .catch(err=>console.log(err))
-    },[])
+    },[email])
 
     const handleSubmit=()=>{
         localStorage.setItem("name",name)
