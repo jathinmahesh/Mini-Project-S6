@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Sorter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #sortedSkills {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Skill Sorter</h1>
+        <div>
+            <label for="jobDescription">Job Description:</label><br>
+            <textarea id="jobDescription" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="skillsToPrioritize">Skills to Prioritize (comma-separated):</label><br>
+            <input type="text" id="skillsToPrioritize" size="50">
+        </div>
+        <button onclick="sortSkills()">Sort Skills</button>
+        <div id="sortedSkills"></div>
+    </div>
+
+    <script>
+        function sortSkills() {
+            var jobDescription = document.getElementById("jobDescription").value;
+            var skillsToPrioritize = document.getElementById("skillsToPrioritize").value.split(",").map(skill => skill.trim());
+
+            fetch('http://localhost:5001/api/sort_skills', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    job_description: jobDescription,
+                    skills_to_prioritize: skillsToPrioritize
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var sortedSkills = data.sorted_skills.join(", ");
+                document.getElementById("sortedSkills").innerHTML = "<h2>Sorted Skills:</h2>" + sortedSkills;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
