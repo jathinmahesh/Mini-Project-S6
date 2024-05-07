@@ -4,7 +4,7 @@ import spacy
 
 app = Flask(__name__)
 CORS(app)
-model_path = "en_core_web_sm"  # Adjust the path accordingly
+model_path = "sort/server/mynew"  # Adjust the path accordingly
 nlp = spacy.load(model_path)
 
 # Define skills to prioritize
